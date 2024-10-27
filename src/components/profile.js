@@ -11,6 +11,7 @@ const Profile = () => {
                             <img className={styles.imageIcon} src={user.picture} alt={user.name} />
                             <div className={styles.name}>
                                   <div className={styles.tanzirRahman}>{user.name}</div>
+                                  
                                   <div className={styles.viewProfile}>View profile</div>
                             </div>
                       </div>
