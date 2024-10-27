@@ -1,13 +1,99 @@
+/*Global Styling*/
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #161616;
+  color: var(--primary);
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  font-weight: normal;
+  text-align: justify;
+}
+:root{
+  --primary:white;
+  --black-color:#161616;
+  --orange:#FF6500;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Landing Page Styling*/
+.landing-container {
+  background-image: url('../images/landingpage.png'); /* Add your image URL here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.animate-spooky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-image: url('../images/landingpage_blur.png'); /* Add your image URL here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: spooky 2s infinite alternate;
+}
+@keyframes spooky {
+  from {
+    filter: drop-shadow(0 0 10px rgba(255, 101, 0, 0.60));
+    
+  }
+  to {
+    filter: drop-shadow(0 0 0px rgba(255, 101, 0, 0.60));
+    
+  }
+}
+.content {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% auto 17%;
+  border-radius: 10px;
+}
+
+.logo-heading{
+  width: 60%;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px;
+  font-family: "Nosifer", sans-serif;
+  color: var(--orange);
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 0px rgba(255, 101, 0, 0.60);
+  }
+  to {
+    text-shadow: 0px 0px 10px rgba(255, 101, 0, 0.60);
+  }
+}
+.landing-description{
+  width: 50%;
+}
+.get-started {
+  background-color: var(--orange);
+  color: var(--black-color);
+  width: 200px;
+  padding: 10px 0px 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid var(--orange);
+  margin-top: 2.5%;
+}
+
+.get-started:hover {
+  background-color: transparent;
+  color: var(--orange);
 }
