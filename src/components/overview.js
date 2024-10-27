@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import styles from './Overview.module.css';
 import Content from './content';
 import jsonData from './data.json'; // Import the JSON directly
-
+import { useAuth0 } from '@auth0/auth0-react';
+import { useNavigate } from 'react-router-dom';
 const MAX_LENGTH = 100; // Max characters before truncating
 
 const Overview = () => {
+  const { user, isAuthenticated } = useAuth0();
   const [newsData, setNewsData] = useState([]);
   const [showNews, setShowNews] = useState(false);
   const [expandedStates, setExpandedStates] = useState([]); // Track expanded states
@@ -30,7 +32,7 @@ const Overview = () => {
     <div className={styles.overview}>
       {/* Header section */}
       <div className={styles.header3} style={{ display: showNews ? 'none' : 'flex' }}>
-        <b className={styles.helloTanzir}>Hello Tanzir</b>
+        <b className={styles.usernamestyle}>Hello,{user.name}</b>
         <div className={styles.buttonicon}>
           <button onClick={handleNewsClick}>News</button>
           <div className={styles.notificationIconChild} />
@@ -54,6 +56,20 @@ const Overview = () => {
                   }}
                 />
 
+                <div className={styles.newsMeta}>
+                  <p><strong>Author:</strong> {item.author}</p>
+                  <p><strong>Source:</strong> {item.site}</p>
+                  <p><strong>Ticker:</strong> {item.tickers}</p>
+                </div>
+
+               <div className={styles.buttoncon}><a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.readMoreLink}
+                >
+                  Visit Source
+                </a>
                 {item.content.length > MAX_LENGTH && (
                   <button
                     className={styles.toggleButton}
@@ -62,21 +78,8 @@ const Overview = () => {
                     {expandedStates[index] ? 'Read less' : 'Read more'}
                   </button>
                 )}
+</div> 
 
-                <div className={styles.newsMeta}>
-                  <p><strong>Author:</strong> {item.author}</p>
-                  <p><strong>Source:</strong> {item.site}</p>
-                  <p><strong>Ticker:</strong> {item.tickers}</p>
-                </div>
-
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.readMoreLink}
-                >
-                  Visit Source
-                </a>
               </div>
             </div>
           ))}

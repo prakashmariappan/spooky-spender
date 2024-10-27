@@ -711,8 +711,8 @@
   
   .newsItem {
     margin: 3% auto;
-    width: 300px;
-    border-radius: 8px;
+    width: 39%;
+    border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #f3f3f3;
@@ -730,19 +730,37 @@
   .newsContent h3{
     font-size: 18px;
     color: var(--orange);
+    margin: 0px;
   }
   .newsContent p{
     font-size: 16px;
     color: #181919;
+    font-family: "Poppins", sans-serif;
   }
   .newsMeta {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
     font-size: 18px;
+    margin: 5px auto;
     color: var(--orange);
   }
-  
+  .newsMeta p{
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+  .buttoncon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 5.5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
   .toggleButton {
     text-align: center;
-    padding: 4px 20px ;
+    padding: 8px 20px ;
     margin: auto;
     cursor: pointer;
     font-weight: 500;
@@ -754,11 +772,19 @@
     display: inline-block;
   }
   
-  .readMore{
+  .readMoreLink{
     text-decoration: none;
     color: var(--orange);
-    font-size: 12px;
+    font-size: 16px;
+    padding: 6px 20px ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 2px solid var(--orange);
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: var(--orange);
   }
-  .readMore:hover {
+  .readMoreLink:hover {
     text-decoration: underline;
   }

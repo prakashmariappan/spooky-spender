@@ -24,24 +24,6 @@ const NavBar = () => {
           navigate("/Dashboard/Approval");
         }}>Approvals</div>
           					</div>
-          					<div className={styles.menu2}>
-            						<div className={styles.transactions} />
-            						<div className={styles.navtext}>Transactions</div>
-          					</div>
-          					<div className={styles.menu2}>
-            						<div className={styles.expenses} />
-            						<div className={styles.navtext}>
-              							Expenses
-            						</div>
-          					</div>
-          					<div className={styles.menu2}>
-            						<div className={styles.goals}/>
-            						<div className={styles.navtext}>Goals</div>
-          					</div>
-          					<div className={styles.menu2}>
-            						<div className={styles.settings}/>
-            						<div className={styles.navtext}>Settings</div>
-          					</div>
                               <div className={styles.logoutcon} onClick={logout}>
             						<div className={styles.logout}/>
             						<div className={styles.navtext}>Logout</div>

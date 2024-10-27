@@ -17,6 +17,7 @@ body {
 button{
   font-family: "Poppins", sans-serif;
 }
+
 :root{
   --primary:white;
   --black:#161616;
@@ -34,6 +35,7 @@ button{
   align-items: center;
   text-align: center;
 }
+
 .animate-spooky{
   position: fixed;
   top: 0;
@@ -45,6 +47,7 @@ button{
   height: 100vh;
   animation: spooky 2s infinite alternate;
 }
+
 @keyframes spooky {
   from {
     filter: drop-shadow(0 0 10px rgba(255, 101, 0, 0.60));
@@ -55,6 +58,7 @@ button{
     
   }
 }
+
 .content {
   display: flex;
   width: 80%;
@@ -84,8 +88,8 @@ button{
 .landing-description{
   width: 50%;
 }
-.get-started {
-  position: relative; 
+.get-started { 
+  position: relative;
   z-index: 10; 
   cursor: pointer;
   background-color: var(--orange);
@@ -103,6 +107,7 @@ button{
   background-color: transparent;
   color: var(--orange);
 }
+
 /*Dashboard Styling*/
 .parent-div{
   width: 100%;
