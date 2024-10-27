@@ -1,17 +1,20 @@
 import React from "react";
+import LoginButton from "./loginbutton";
+import LogoutButton from "./logoutbutton";
 
 const Landingpage = () => {
   return (
     <>
-      <div class="landing-container">
-        <div class="animate-spooky"></div>
-        <div class="content">
-          <h1 class="logo-heading">Welcome to Spooky Spender</h1>
-          <p class="landing-description">
+      <div className="landing-container">
+        <div className="animate-spooky"></div>
+        <div className="content">
+          <h1 className="logo-heading">Welcome to Spooky Spender</h1>
+          <p className="landing-description">
             Haunt your finances no more. Track your spending and conjure a
             budget that won’t send chills down your spine!
           </p>
-          <button class="get-started">Get Started</button>
+          <LoginButton/>
+          <LogoutButton/>
         </div>
       </div>
     </>
