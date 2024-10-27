@@ -112,11 +112,8 @@ font-family: "Nosifer", sans-serif;
     object-fit: cover;
 }
 .tanzirRahman {
-    width: 140px;
-    position: relative;
-    line-height: 24px;
+    font-size: 16px;
     font-weight: 600;
-    display: inline-block;
 }
 .viewProfile {
     position: relative;
@@ -160,7 +157,7 @@ font-family: "Nosifer", sans-serif;
     padding: 5% 0px;
     gap: 32px;
     cursor: pointer;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .footer {
     display: flex;

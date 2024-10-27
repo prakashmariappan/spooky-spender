@@ -13,7 +13,6 @@ const NavBar = () => {
         				<div className={styles.finebankio}>
           					<h3 className={styles.logonav} onClick={() => navigate(-3)}>Spooky Spender</h3>
         				</div>
-                        <Profile/>
         				<div className={styles.menu}>
           					<div className={styles.menu2}>
             						<div className={styles.overview}/>
@@ -49,22 +48,7 @@ const NavBar = () => {
           					</div>
         				</div>
       			</div>
-      			<div className={styles.footer}>
-        				<div className={styles.profile}>
-          					<div className={styles.namePicture}>
-            						<img className={styles.imageIcon} alt="" src="Image.png" />
-            						<div className={styles.name}>
-              							<div className={styles.tanzirRahman}>Rahman</div>
-              							<div className={styles.viewProfile}>View profile</div>
-            						</div>
-          					</div>
-          					<div className={styles.icon1}>
-            						<div className={styles.iconChild} />
-            						<div className={styles.iconChild} />
-            						<div className={styles.iconChild} />
-          					</div>
-        				</div>
-      			</div>
+				  <Profile/>
     		</div>);
 };
 

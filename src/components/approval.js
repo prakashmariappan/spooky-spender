@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Approval.module.css';
 const Approval = () => {
+    
     return (
     		<div className={styles.frameParent}>
       			<div className={styles.frameGroup}>
