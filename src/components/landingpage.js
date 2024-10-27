@@ -1,6 +1,5 @@
 import React from "react";
 import LoginButton from "./loginbutton";
-import LogoutButton from "./logoutbutton";
 
 const Landingpage = () => {
   return (
@@ -14,7 +13,6 @@ const Landingpage = () => {
             budget that won’t send chills down your spine!
           </p>
           <LoginButton/>
-          <LogoutButton/>
         </div>
       </div>
     </>

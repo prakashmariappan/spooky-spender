@@ -1,0 +1,175 @@
+.navBar {
+    background-color: var(--black);
+    width: 22%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding:.5% 28px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000;
+}
+.finebankio {
+    width: 100%;
+    text-align: center;
+}
+.logonav{
+font-size: 18px;
+font-weight: 700;
+font-family: "Nosifer", sans-serif;
+  color: var(--orange);
+  cursor: pointer;
+}
+.overview, .approvals, .transactions, .expenses, .goals, .settings{
+    width: 24px;
+    background-position: center;
+    background-size: cover;
+    height: 24px;
+    border-radius: 0%;
+    background-repeat: no-repeat;
+}
+.overview{
+    background-image: url(../../images/icons/Overview.svg);
+}
+.approvals{
+    background-image: url(../../images/icons/approval.svg);
+}
+.transactions{
+    background-image: url(../../images/icons/Transaction.svg);
+}
+.expenses{
+    background-image: url(../../images/icons/Expencces.svg);
+}
+.goals{
+    background-image: url(../../images/icons/Goal.svg);
+}
+.settings{
+    background-image: url(../../images/icons/Settings.svg);
+}
+
+.navtext{
+    width: 156px;
+    font-weight: 600;
+    height: 24px;
+    text-align: left;
+}
+
+.menu1, .menu2{
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    gap: 12px;
+    cursor: pointer;
+}
+.menu1 {
+    background-color: #ff6500;
+}
+.menu2:hover,.logoutcon:hover {
+    background-color: #ff6500;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: left;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logoutcon{
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logout{
+    width: 20px;
+    background-image: url(../../images/icons/Icon.svg);
+    height: 20px;
+    background-position: center;
+}
+
+.imageIcon {
+    width: 32px;
+    position: relative;
+    border-radius: 50%;
+    height: 32px;
+    object-fit: cover;
+}
+.tanzirRahman {
+    width: 140px;
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+    display: inline-block;
+}
+.viewProfile {
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.namePicture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.iconChild {
+    width: 4px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 4px;
+}
+.icon1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.profile {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 0px;
+    gap: 32px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 44px;
+    text-align: left;
+    font-size: 16px;
+}
+
+

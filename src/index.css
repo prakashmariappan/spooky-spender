@@ -6,7 +6,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: #161616;
+  background: var(--black);
   color: var(--primary);
   font-family: "Poppins", sans-serif;
   line-height: normal;
@@ -19,7 +19,7 @@ button{
 }
 :root{
   --primary:white;
-  --black-color:#161616;
+  --black:#161616;
   --orange:#FF6500;
 }
 
@@ -89,7 +89,7 @@ button{
   z-index: 10; 
   cursor: pointer;
   background-color: var(--orange);
-  color: var(--black-color);
+  color: var(--black);
   width: 200px;
   padding: 10px 0px 10px 0px;
   border-radius: 5px;
@@ -100,7 +100,12 @@ button{
 }
 
 .get-started:hover {
- 
   background-color: transparent;
   color: var(--orange);
+}
+/*Dashboard Styling*/
+.parent-div{
+  width: 100%;
+  display: flex;
+  margin: 0;
 }

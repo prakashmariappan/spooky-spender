@@ -1,16 +1,16 @@
 import React from 'react';
-import Overview from './overview';
+import Approval from './approval';
 import NavBar from './navbar';
 
-const Dashboard = () => {
+const Approvalpage = () => {
     return (
         <>
         <div className='parent-div'>
             <NavBar/>
-            <Overview/>
+            <Approval/>
         </div>
         </>
     );
 }
 
-export default Dashboard;
+export default Approvalpage;
