@@ -10,7 +10,7 @@ const Link = () => {
              <Routes>
              <Route path="/" element={<Landingpage />} exact />
              <Route path="/dashboard" element={<Dashboard/>} exact/>
-             <Route path="/Dashboard/Approval" element={<Approvalpage />} exact />
+             <Route path="/dashboard/approval" element={<Approvalpage />} exact />
              </Routes>
              </BrowserRouter>
         </>
